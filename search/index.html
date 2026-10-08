@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://xxvncjcnjxmqofvzsrjl.supabase.co; base-uri 'none'; form-action 'none'">
+  <title>회사 대화 검색</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>회사 대화 검색</h1>
+    <p id="notice" role="status"></p>
+
+    <section id="signed-out" hidden>
+      <p>허락된 Google 계정만 쓸 수 있어요.</p>
+      <button id="sign-in" type="button">Google 계정으로 로그인</button>
+    </section>
+
+    <section id="signed-in" hidden>
+      <form id="search">
+        <input id="q" type="search" placeholder="예: 고등어 단가" autocomplete="off" required>
+        <button type="submit">찾기</button>
+        <details>
+          <summary>조건 더 넣기</summary>
+          <label>방 <select id="space"><option value="">모든 방</option></select></label>
+          <label>부터 <input id="from" type="date"></label>
+          <label>까지 <input id="to" type="date"></label>
+          <fieldset id="kinds"><legend>종류</legend></fieldset>
+        </details>
+      </form>
+      <p id="count" role="status"></p>
+      <ol id="results"></ol>
+      <button id="more" type="button" hidden>더 보기</button>
+      <p class="footer"><button id="sign-out" type="button">로그아웃</button></p>
+    </section>
+  </main>
+</body>
+</html>
