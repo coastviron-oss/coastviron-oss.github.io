@@ -22,7 +22,7 @@
 
     <section id="signed-in" hidden>
       <form id="search">
-        <input id="q" type="search" placeholder="예: 고등어 단가" autocomplete="off" required>
+        <input id="q" type="search" placeholder="예: 고등어 단가 (방+날짜만 고르고 찾기 → 그날 대화)" autocomplete="off">
         <button type="submit">찾기</button>
         <details>
           <summary>조건 더 넣기</summary>
@@ -33,7 +33,9 @@
         </details>
       </form>
       <p id="count" role="status"></p>
+      <button id="chat-older" type="button" hidden>↑ 더 앞</button>
       <ol id="results"></ol>
+      <button id="chat-newer" type="button" hidden>↓ 더 뒤</button>
       <button id="more" type="button" hidden>더 보기</button>
       <p class="footer"><button id="sign-out" type="button">로그아웃</button></p>
     </section>

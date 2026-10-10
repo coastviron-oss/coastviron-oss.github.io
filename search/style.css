@@ -21,4 +21,12 @@ fieldset { border: 0; padding: 0; margin: 6px 0 0; }
 .tag.audio_stt, .tag.video_stt { background: #e6f4ea; color: #0d652d; }
 .deleted { color: #a50e0e; font-weight: 600; }
 mark { background: #ffe58f; }
+.chat-toggle { margin-top: 8px; padding: 6px 12px; font-size: 0.9rem; }
+#results li.chat-window { list-style: none; background: #f6f7f9; border: 1px solid #e0e4e8; border-radius: 10px; padding: 8px 12px; margin: 10px 0; }
+.chat-window > button { display: block; margin: 6px auto; padding: 4px 10px; font-size: 0.85rem; }
+.chat-lines { display: flex; flex-direction: column; gap: 10px; }
+.chat-line { padding: 6px 8px; border-radius: 6px; }
+.chat-line p { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.chat-hit { background: #fff4e5; border: 1px solid #f5c48a; }
+#chat-older, #chat-newer { display: block; margin: 10px auto; }
 .footer { text-align: right; margin-top: 24px; }
