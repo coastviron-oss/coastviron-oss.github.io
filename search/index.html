@@ -51,9 +51,25 @@
     <p id="ph-note" role="status"></p>
     <p id="ph-signin" hidden>이 방 사진을 모두 보려면 로그인하세요. <button id="ph-sign-in" type="button">Google 계정으로 로그인</button></p>
     <div id="ph-view">
-      <button id="ph-prev" type="button" aria-label="이전 사진 (←)">‹</button>
-      <div id="ph-stage"><img id="ph-img" alt="사진"></div>
-      <button id="ph-next" type="button" aria-label="다음 사진 (→)">›</button>
+      <div id="ph-main">
+        <button id="ph-prev" type="button" aria-label="이전 사진 (←)">‹</button>
+        <div id="ph-stage"><div id="ph-frame"><img id="ph-img" alt="사진"></div></div>
+        <button id="ph-next" type="button" aria-label="다음 사진 (→)">›</button>
+      </div>
+      <!-- 묶음 사진: the other pictures of the same Chat message, like KakaoTalk's strip. -->
+      <div id="ph-strip" hidden>
+        <span id="ph-strip-count"></span>
+        <div id="ph-strip-tiles"></div>
+      </div>
+      <footer id="ph-tools" class="ph-bar">
+        <button id="ph-smaller" type="button" title="작게 (− 키)">−</button>
+        <button id="ph-larger" type="button" title="크게 (+ 키)">+</button>
+        <button id="ph-actual" type="button" title="원래 크기 ↔ 창에 맞춤 (사진을 눌러도 됨)">⤢ 원래 크기</button>
+        <button id="ph-turn" type="button" title="오른쪽으로 돌리기">⟳ 돌리기</button>
+        <span class="ph-gap"></span>
+        <button id="ph-print" type="button" title="이 사진 인쇄 (Ctrl+P)">인쇄</button>
+        <button id="ph-talk" type="button" title="이 사진이 올라온 대화를 새 탭에">대화 보기</button>
+      </footer>
     </div>
     <div id="ph-grid" hidden></div>
   </section>
