@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src https://xxvncjcnjxmqofvzsrjl.supabase.co; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://chat.google.com https://*.googleusercontent.com; connect-src https://xxvncjcnjxmqofvzsrjl.supabase.co; base-uri 'none'; form-action 'none'">
   <title>회사 대화 검색</title>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="app.js"></script>
@@ -40,5 +40,22 @@
       <p class="footer"><button id="sign-out" type="button">로그아웃</button></p>
     </section>
   </main>
+
+  <!-- 사진 모아보기 (web/photos.ts): shown only at #photos?…, which the Chrome extension opens from Google Chat. -->
+  <section id="photos" hidden>
+    <header class="ph-bar">
+      <button id="ph-toggle" type="button">▦ 전체 사진</button>
+      <span id="ph-caption"></span>
+      <span id="ph-count"></span>
+    </header>
+    <p id="ph-note" role="status"></p>
+    <p id="ph-signin" hidden>이 방 사진을 모두 보려면 로그인하세요. <button id="ph-sign-in" type="button">Google 계정으로 로그인</button></p>
+    <div id="ph-view">
+      <button id="ph-prev" type="button" aria-label="이전 사진 (←)">‹</button>
+      <div id="ph-stage"><img id="ph-img" alt="사진"></div>
+      <button id="ph-next" type="button" aria-label="다음 사진 (→)">›</button>
+    </div>
+    <div id="ph-grid" hidden></div>
+  </section>
 </body>
 </html>
