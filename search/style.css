@@ -29,6 +29,10 @@ mark { background: #ffe58f; }
 .chat-line p { margin: 4px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
 .chat-hit { background: #fff4e5; border: 1px solid #f5c48a; }
 #chat-older, #chat-newer { display: block; margin: 10px auto; }
+#ai-row { grid-column: 1 / -1; }
+#ai-row .hint { color: #57606a; font-size: 0.9rem; }
+.guess { display: inline-block; border-radius: 6px; padding: 1px 8px; margin-left: 4px; background: #fef7e0; color: #8a5a00; font-weight: 600; }
+#results p.reason { color: #57606a; font-size: 0.95rem; }
 .footer { text-align: right; margin-top: 24px; }
 
 /* `hidden` always wins over a display rule: #chat-older/#chat-newer and the 사진 모아보기 parts set display themselves. */

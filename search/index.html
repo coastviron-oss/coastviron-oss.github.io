@@ -23,7 +23,8 @@
     <section id="signed-in" hidden>
       <form id="search">
         <input id="q" type="search" placeholder="예: 고등어 단가 (방+날짜만 고르고 찾기 → 그날 대화)" autocomplete="off">
-        <button type="submit">찾기</button>
+        <button id="go" type="submit">찾기</button>
+        <label id="ai-row"><input id="ai" type="checkbox"> AI로 찾기 <span class="hint">기억이 흐릿할 때 말로 물어보세요 (10~20초 걸려요)</span></label>
         <details>
           <summary>조건 더 넣기</summary>
           <label>방 <select id="space"><option value="">모든 방</option></select></label>
