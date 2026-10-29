@@ -1,78 +1,10 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://chat.google.com https://*.googleusercontent.com; connect-src https://xxvncjcnjxmqofvzsrjl.supabase.co; base-uri 'none'; form-action 'none'">
-  <title>회사 대화 검색</title>
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="app.js"></script>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>회사 대화 검색 — 주소가 바뀌었어요</title>
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:32rem;margin:3rem auto;padding:0 1rem;line-height:1.6;word-break:keep-all}</style></head>
 <body>
-  <main>
-    <h1>회사 대화 검색</h1>
-    <p id="notice" role="status"></p>
-
-    <section id="signed-out" hidden>
-      <p>허락된 Google 계정만 쓸 수 있어요.</p>
-      <button id="sign-in" type="button">Google 계정으로 로그인</button>
-    </section>
-
-    <section id="signed-in" hidden>
-      <form id="search">
-        <input id="q" type="search" placeholder="예: 고등어 단가 (방+날짜만 고르고 찾기 → 그날 대화)" autocomplete="off">
-        <button id="go" type="submit">찾기</button>
-        <label id="ai-row"><input id="ai" type="checkbox"> AI로 찾기 <span class="hint">기억이 흐릿할 때 말로 물어보세요 (10~20초 걸려요)</span></label>
-        <details>
-          <summary>조건 더 넣기</summary>
-          <label>방 <select id="space"><option value="">모든 방</option></select></label>
-          <label>부터 <input id="from" type="date"></label>
-          <label>까지 <input id="to" type="date"></label>
-          <fieldset id="kinds"><legend>종류</legend></fieldset>
-        </details>
-      </form>
-      <p id="count" role="status"></p>
-      <button id="chat-older" type="button" hidden>↑ 더 앞</button>
-      <ol id="results"></ol>
-      <button id="chat-newer" type="button" hidden>↓ 더 뒤</button>
-      <button id="more" type="button" hidden>더 보기</button>
-      <p class="footer"><button id="sign-out" type="button">로그아웃</button></p>
-    </section>
-  </main>
-
-  <!-- 사진 모아보기 (web/photos.ts): shown only at #photos?…, which the Chrome extension opens from Google Chat. -->
-  <section id="photos" hidden>
-    <header class="ph-bar">
-      <button id="ph-toggle" type="button">▦ 전체 사진</button>
-      <span id="ph-caption"></span>
-      <span id="ph-count"></span>
-    </header>
-    <p id="ph-note" role="status"></p>
-    <p id="ph-signin" hidden>이 방 사진을 모두 보려면 로그인하세요. <button id="ph-sign-in" type="button">Google 계정으로 로그인</button></p>
-    <div id="ph-view">
-      <div id="ph-main">
-        <button id="ph-prev" type="button" aria-label="이전 사진 (←)">‹</button>
-        <div id="ph-stage"><div id="ph-frame"><img id="ph-img" alt="사진"></div></div>
-        <button id="ph-next" type="button" aria-label="다음 사진 (→)">›</button>
-      </div>
-      <!-- 묶음 사진: the other pictures of the same Chat message, like KakaoTalk's strip. -->
-      <div id="ph-strip" hidden>
-        <span id="ph-strip-count"></span>
-        <div id="ph-strip-tiles"></div>
-      </div>
-      <footer id="ph-tools" class="ph-bar">
-        <button id="ph-smaller" type="button" title="작게 (− 키)">−</button>
-        <button id="ph-larger" type="button" title="크게 (+ 키)">+</button>
-        <button id="ph-actual" type="button" title="원래 크기 ↔ 창에 맞춤 (사진을 눌러도 됨)">⤢ 원래 크기</button>
-        <button id="ph-turn" type="button" title="오른쪽으로 돌리기">⟳ 돌리기</button>
-        <span class="ph-gap"></span>
-        <button id="ph-print" type="button" title="이 사진 인쇄 (Ctrl+P)">인쇄</button>
-        <button id="ph-talk" type="button" title="이 사진이 올라온 대화를 새 탭에">대화 보기</button>
-      </footer>
-    </div>
-    <div id="ph-grid" hidden></div>
-  </section>
+<h1>검색 주소가 바뀌었어요</h1>
+<p>회사 대화 검색은 이제 사무실 Mac mini에서 열려요. Tailscale을 켠 휴대폰·PC에서만 들어갈 수 있어요.</p>
+<p><a href="http://100.111.195.88:8791/">새 검색 화면 열기</a></p>
 </body>
 </html>
